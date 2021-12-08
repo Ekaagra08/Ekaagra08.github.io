@@ -1,0 +1,729 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #272829;
+}
+
+a {
+  color: #0563bb;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #067ded;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+.social-links :hover {
+  color: #0563bb;
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #0563bb;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+.back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+.back-to-top:hover {
+  background: #0678e3;
+  color: #fff;
+}
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #fff;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #0563bb;
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*--------------------------------------------------------------
+# Disable aos animation delay on mobile devices
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 9997;
+  transition: all 0.5s;
+  padding: 15px;
+  overflow-y: auto;
+}
+@media (max-width: 992px) {
+  #header {
+    width: 300px;
+    background: #fff;
+    border-right: 1px solid #e6e9ec;
+    left: -300px;
+  }
+}
+
+@media (min-width: 992px) {
+  #main {
+    margin: 0 70px 0 140px;
+  }
+}
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/**
+* Desktop Navigation 
+*/
+.nav-menu {
+  padding: 0;
+  display: block;
+}
+.nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.nav-menu > ul > li {
+  position: relative;
+  white-space: nowrap;
+}
+.nav-menu a, .nav-menu a:focus {
+  display: flex;
+  align-items: center;
+  color: #5a6570c7;
+  padding: 10px 18px;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.nav-menu a i, .nav-menu a:focus i {
+  font-size: 20px;
+}
+.nav-menu a span, .nav-menu a:focus span {
+  padding: 0 5px 0 7px;
+  color: #45505b;
+}
+@media (min-width: 992px) {
+  .nav-menu a span, .nav-menu a:focus span {
+    display: none;
+    color: #fff;
+  }
+}
+.nav-menu a:hover, .nav-menu .active, .nav-menu .active:focus, .nav-menu li:hover > a {
+  color: #0563bb;
+}
+
+
+/**
+* Mobile Navigation 
+*/
+.mobile-nav-toggle {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  z-index: 9998;
+  border: 0;
+  background: none;
+  font-size: 28px;
+  transition: all 0.4s;
+  outline: none !important;
+  line-height: 0;
+  cursor: pointer;
+  border-radius: 50px;
+  padding: 5px;
+}
+.mobile-nav-toggle i {
+  color: #45505b;
+}
+
+.mobile-nav-active {
+  overflow: hidden;
+}
+.mobile-nav-active #header {
+  left: 0;
+}
+.mobile-nav-active .mobile-nav-toggle {
+  color: #fff;
+  background-color: #0563bb;
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  background: url("MyResume\assets\img\bg.gif") top right no-repeat;
+  background-size: cover;
+}
+@media (min-width: 992px) {
+  #hero {
+    padding-left: 190px;
+    
+  }
+}
+#hero:before {
+  content: "";
+  background: rgba(255, 255, 255, 0);
+  /*background: rgb(220,223,236);
+  background: linear-gradient(120deg,rgb(255, 255, 255) 0%, rgba(220,223,236,1) 36%, rgba(99,102,107,0) 110%);
+  */position: absolute;
+  bottom: 0px;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.hero_content{
+  margin:80px 0;
+}
+#hero h1 {
+  margin: 0;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #45505b;
+}
+#hero p {
+  color: #45505b;
+  margin: 15px 0 0 0;
+  font-size: 26px;
+  font-family: "Poppins", sans-serif;
+}
+#hero p span {
+  color: #0563bb;
+  letter-spacing: 1px;
+}
+#hero .social-links {
+  margin-top: 30px;
+}
+#hero .social-links a {
+  font-size: 24px;
+  display: inline-block;
+  color: #45505b;
+  line-height: 1;
+  margin-right: 20px;
+  transition: 0.3s;
+}
+.scroll i{
+  position: relative;
+  left: -15px;
+}
+.img-box{
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.myimg{
+  width:100%;
+  height:100%;
+}
+
+@media (max-width: 992px) {
+  #hero {
+    text-align: center;
+    margin: 0 ;
+  }
+  #hero h1 {
+    font-size: 42px;
+    line-height: 46px;
+  }
+  #hero p {
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .scroll{
+    display: none;
+    margin: auto;
+  }
+  
+  
+}
+
+@media (max-width: 425px) {
+  #hero h1 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  #hero p {
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 60px 30px ;
+  overflow: hidden;
+}
+
+.section-title {
+  padding-bottom: 10px;
+  text-align: left;
+}
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #45505b;
+}
+.section-title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  
+}
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #0563bb;
+  bottom: 0;
+  
+}
+.section-title p {
+  margin-bottom: 0;
+}
+
+@media (max-width: 992px){
+  #about h2 ,#projects h2 ,#tech_stack h2 ,#Certification h2 ,#contact h2 ,#education h2{
+    font-size: 30px;
+    line-height: 36px;
+  }
+  #projects h4{
+    font-size: 22px;
+    line-height: 26px;
+  }
+  #projects .proj-box{
+    padding:20px;
+  }
+}
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.about .content h3 {
+  font-weight: 700;
+  font-size: 26px;
+  color: #728394;
+}
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+.about .content ul li {
+  margin-bottom: 20px;
+  display: flex;
+}
+.about .content ul strong {
+  margin-right: 10px;
+}
+.about .content ul i {
+  font-size: 16px;
+  margin-right: 5px;
+  color: #0563bb;
+  line-height: 0;
+}
+.about .content p:last-child {
+  margin-bottom: 0;
+}
+@media (max-width: 992px){
+  #about{
+    margin-top: -150px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Skills
+--------------------------------------------------------------*/
+.tech-box {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+}
+
+.tech-box h6 {
+  text-transform: capitalize;
+  padding: 5px 0 0 20px;
+  line-height: 2;
+  font-weight: 600;
+  font-size: larger;
+  
+}
+
+/*--------------------------------------------------------------
+# education
+--------------------------------------------------------------*/
+.education .education-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #45505b;
+}
+.education .education-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #0563bb;
+  position: relative;
+}
+.education .education-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #0563bb;
+  margin-bottom: 10px;
+}
+.education .education-item h5 {
+  font-size: 16px;
+  background: #f7f8f9;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.education .education-item ul {
+  padding-left: 20px;
+}
+.education .education-item ul li {
+  padding-bottom: 10px;
+}
+.education .education-item:last-child {
+  padding-bottom: 0;
+}
+.education .education-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #0563bb;
+}
+
+
+/*--------------------------------------------------------------
+# Projects
+--------------------------------------------------------------*/
+.projects .proj-box {
+  padding: 20px 50px;
+  transition: all ease-in-out 0.3s;
+  background: #fff;
+  border-radius: 10px;
+  border-color: #4f718331;
+  box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.103);
+  border-style: solid;
+  border-width: 1px;
+}
+
+.projects .proj-box .icon {
+  margin:5px 0;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: ease-in-out 0.3s;
+  position: relative;
+}
+.projects .proj-box .icon i {
+  font-size: 36px;
+  transition: 0.5s;
+  position: relative;
+}
+.projects .proj-box .icon svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.projects .proj-box .icon svg path {
+  transition: 0.5s;
+  fill: #f5f5f5;
+}
+.projects .proj-box h4 {
+  font-weight: 600;
+  margin: 10px 0 15px 0;
+  font-size: 22px;
+}
+.projects .proj-box h4 a {
+  color: #45505b;
+  transition: ease-in-out 0.3s;
+}
+.projects .proj-box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.projects .proj-box:hover {
+  border-color: #fff;
+  box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.185);
+}
+.projects .proj-box .expand{
+  color: #7a7a7a;
+  font-size: small;
+}
+
+.projects .projbox-blue i {
+  color: #47aeff;
+}
+.projects .projbox-blue:hover .icon i {
+  color: #fff;
+}
+.projects .projbox-blue:hover .icon path {
+  fill: #47aeff;
+}
+.projects .projbox-orange i {
+  color: #ffa76e;
+}
+.projects .projbox-orange:hover .icon i {
+  color: #fff;
+}
+.projects .projbox-orange:hover .icon path {
+  fill: #ffa76e;
+}
+.projects .projbox-pink i {
+  color: #e80368;
+}
+.projects .projbox-pink:hover .icon i {
+  color: #fff;
+}
+.projects .projbox-pink:hover .icon path {
+  fill: #e80368;
+}
+.projects .projbox-yellow i {
+  color: #ffbb2c;
+}
+.projects .projbox-yellow:hover .icon i {
+  color: #fff;
+}
+.projects .projbox-yellow:hover .icon path {
+  fill: #ffbb2c;
+}
+.projects .projbox-red i {
+  color: #ff5828;
+}
+.projects .projbox-red:hover .icon i {
+  color: #fff;
+}
+.projects .projbox-red:hover .icon path {
+  fill: #ff5828;
+}
+.projects .projbox-teal i {
+  color: #11dbcf;
+}
+.projects .projbox-teal:hover .icon i {
+  color: #fff;
+}
+.projects .projbox-teal:hover .icon path {
+  fill: #11dbcf;
+}
+
+/*--------------------------------------------------------------
+# certifications
+--------------------------------------------------------------*/
+.certifications .section-header {
+  margin-bottom: 40px;
+}
+.certifications .certifications-carousel, .certifications .certifications-slider {
+  overflow: hidden;
+}
+.certifications .swiper-slide{
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+.certifications .certification-item h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0 10px 0;
+  color: rgb(12, 84, 143);
+}
+.certifications .certification-item span{
+  font-weight: 400;
+  font-family: monospace;
+  font-size:13px;
+  margin-left: 5px;
+  vertical-align:middle;
+  padding: 4px;
+  background: #e7e7e7c9;
+  border-radius: 5px;
+  
+}
+.certifications .certification-item ul{
+  margin-top: 5px;
+}
+
+.certification-img{
+  width: 55%;
+  overflow:hidden;
+}
+
+.certifications .swiper-pagination {
+  margin-top: 30px;
+  position: relative;
+}
+.certifications .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #0563bb;
+}
+.certifications .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #0563bb;
+}
+.certification-img img{
+  height:auto;
+  position: relative;
+}
+@media (max-width: 1150px) {
+  .certifications .swiper-slide{
+    display: block;
+    padding: 0; 
+    
+  }
+  .certification-img{
+    width: 100%;
+  }
+  
+  .certification-img img{
+    margin-top: 20px;
+  }
+
+}
+
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+.contact .social-links a i{
+  color: #0563bb;
+  font-size: 36px;
+  margin-right:40px;
+}
+.contact .social-links a :hover{
+  color: #272829;
+  transition: ease .3s;
+} 
+.contact .info i {
+  font-size: 20px;
+  color: #0563bb;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #eef7ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #45505b;
+}
+.contact .info p {
+  padding: 0 0 0 60px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #728394;
+}
+.contact .info .email, .contact .info .phone {
+  margin-top: 40px;
+}
+.contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
+  background: #0563bb;
+  color: #fff;
+  
+}
+
+@media (max-width: 425px){
+  .contact .social-links a i{
+    font-size: 30px;
+    margin-right:20px; 
+  }
+}
