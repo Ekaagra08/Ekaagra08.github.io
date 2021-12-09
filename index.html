@@ -86,22 +86,37 @@
             <a href="https://www.linkedin.com/in/ekaagra08" class="linkedin"><i class="bx bxl-linkedin"></i></a>
           </div>
           <a href="#" class="btn btn-outline-dark my-5 "><b>Resume</b></a>
-          <div class="scroll"><i class='bx bx-chevrons-down bx-fade-down bx-lg text-secondary' ></i></div>
+          <a href="#about"><div class="scroll"><i class='bx bx-chevrons-down bx-fade-down bx-lg text-secondary' ></i></div></a>
           
         </div>
-        <div class="img-box col-lg-4 text-center my-auto pb-5">
-          <!--<img class="img-fluid rounded-circle " src="http://www.monotsuites.com/assets/pages/media/profile/profile_user.jpg">-->
-          
-          <svg class="img-blob" viewBox="0 0 369 369"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" >
-            <defs >
-              <clipPath  id="user-space" clipPathUnits="userSpaceOnUse">
+        <div class="img-box col-lg-4 text-center my-auto ">
+          <svg class="img-blob"
+          viewBox="0 0 400 400"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" 
+          version="1.1">
+            <defs>
+              <pattern
+                id="pattern"
+                patternUnits="userSpaceOnUse"
+                width="10"
+                height="10"
+                viewBox="0 0 100 100"
+                fill="#456d85">
+                <path d="M0 50 100 50" stroke-width="12"/>
+              </pattern>
               
-                              
-
-                  <path transform="translate(90.85000000000002 80.69999999999999)" d="M260 51.9C260 138.4 130 276.8 46.8 276.8C-36.3 276.8 -72.7 138.4 -72.7 51.9C-72.7 -34.6 -36.3 -69.2 46.8 -69.2C130 -69.2 260 -34.6 260 51.9" fill="#152432"></path>
-                </clipPath>
+              <clipPath id="shape">
+                <path fill="currentColor" d="M260 51.9C260 138.4 130 276.8 46.8 276.8C-36.3 276.8 -72.7 138.4 -72.7 51.9C-72.7 -34.6 -36.3 -69.2 46.8 -69.2C130 -69.2 260 -34.6 260 51.9" transform="translate(140, 100)" />
+              </clipPath>
             </defs>
-            <image  class="myimg"  xlink:href="MyResume\assets\img\myimg.png" clip-path="url(#user-space)"/>
+
+            <path fill="url(#pattern)" d="M260 51.9C260 138.4 130 276.8 46.8 276.8C-36.3 276.8 -72.7 138.4 -72.7 51.9C-72.7 -34.6 -36.3 -69.2 46.8 -69.2C130 -69.2 260 -34.6 260 51.9" transform="translate(90, 65)" />
+
+            <g  clip-path="url(#shape)">
+              <path  fill="#456d85" d="M260 51.9C260 138.4 130 276.8 46.8 276.8C-36.3 276.8 -72.7 138.4 -72.7 51.9C-72.7 -34.6 -36.3 -69.2 46.8 -69.2C130 -69.2 260 -34.6 260 51.9" transform="translate(140, 100)" />
+              <image  class="myimg" x='110' y='-90' xlink:href="assets/img/myimg.png" clip-path="url(#user-space)"/>
+            </g>
           </svg>
         </div>
     </div>
