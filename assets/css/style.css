@@ -1,9 +1,23 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
-  background: url("/assets/img/layered-waves-haikei (4).svg") top right no-repeat;
+  background: url("/assets/img/layered-waves-haikei (11).svg") top right no-repeat;
   background-size: cover;
   background-repeat: repeat-y;
+}
+@media(max-width: 768px) {
+  body {
+    background: url("/assets/img/layered-waves-haikei (11)tablet.svg") top right no-repeat;
+    background-size: cover;
+    background-repeat: repeat-y;
+  }
+}
+@media(max-width: 425px) {
+  body {
+    background: url("/assets/img/layered-waves-haikei (11)mobile.svg") top right no-repeat;
+    background-size: cover;
+    background-repeat: repeat-y;
+  }
 }
 
 a {
@@ -300,7 +314,11 @@ h1, h2, h3, h4, h5, h6 {
   .img-box{
     padding:0px;
   }
-
+  #hero{
+    background: url("/assets/img/layered-waves-haikei (4)mobile.svg") top right no-repeat;
+    background-size: cover;
+    background-color: #ffffff;
+  }
 }
 @media (max-width: 425px) {
   #hero{
