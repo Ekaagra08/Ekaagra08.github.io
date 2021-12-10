@@ -245,7 +245,6 @@ h1, h2, h3, h4, h5, h6 {
   margin: 15px 0 0 0;
   font-size: 26px;
   font-family: "Poppins", sans-serif;
-  height: 80px;
 }
 #hero p span {
   color: #0563bb;
@@ -289,10 +288,11 @@ h1, h2, h3, h4, h5, h6 {
   #hero {
     text-align: center;
     margin: 0 ;
+    padding: 50px;
     /*height:calc(100%);*/
   }
   #hero h1 {
-    font-size: 42px;
+    font-size: 52px;
     line-height: 46px;
   }
   #hero p {
@@ -304,14 +304,15 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
     margin: auto;
   }
+  .img-box{
+    padding:0px;
+  }
 
 }
-
-
 @media (max-width: 425px) {
   #hero{
-    margin-bottom: 60px;
     /*height: calc(100%)*/
+    padding: 5px;
   }
   #hero h1 {
     font-size: 32px;
@@ -321,13 +322,26 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 10px;
     font-size: 20px;
     line-height: 24px;
+    height: 50px;
   }
   #hero .social-links a {
     padding-right: 15px;
     margin-right: 0px;
   }
+  .img-box{
+    padding:0 20px;
+  }
 }
-
+@media (max-width: 320px) {
+  #hero{
+    padding: 10px;
+  }
+  #hero h1 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  
+}
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
