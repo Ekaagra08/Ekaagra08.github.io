@@ -360,7 +360,13 @@ section {
   padding: 60px 30px ;
   overflow: hidden;
 }
-
+section:hover{
+  border-radius: 23px;
+background:transparent;
+box-shadow: inset  3px  3px 15px #cacaca4f,
+            inset -3px -3px 15px #f6f6f6;
+transition:all ease .5s;
+}
 
 .section-title {
   padding-bottom: 10px;
@@ -530,7 +536,7 @@ section {
   background: #fff;
   border-radius: 10px;
   border-color: #4f718331;
-  box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.103);
+  box-shadow: 0px 3px 35px 0px rgba(140, 171, 192, 0.171);
   border-style: solid;
   border-width: 1px;
 }
@@ -575,7 +581,7 @@ section {
 }
 .projects .proj-box:hover {
   border-color: #fff;
-  box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.185);
+  box-shadow: 0px 0 35px 0 rgba(13, 51, 87, 0.26);
 }
 .projects .proj-box .expand{
   color: #7a7a7a;
