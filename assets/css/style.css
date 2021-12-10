@@ -360,13 +360,7 @@ section {
   padding: 60px 30px ;
   overflow: hidden;
 }
-section:hover{
-  border-radius: 23px;
-background:transparent;
-box-shadow: inset  3px  3px 15px #cacaca4f,
-            inset -3px -3px 15px #f6f6f6;
-transition:all ease .5s;
-}
+
 
 .section-title {
   padding-bottom: 10px;
