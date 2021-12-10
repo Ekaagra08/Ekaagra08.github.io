@@ -1,6 +1,9 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
+  background: url("/assets/img/layered-waves-haikei (4).svg") top right no-repeat;
+  background-size: cover;
+  background-repeat: repeat-y;
 }
 
 a {
@@ -219,6 +222,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   background: url("/assets/img/layered-waves-haikei (4).svg") top right no-repeat;
   background-size: cover;
+  background-color: #ffffff;
 }
 @media (min-width: 992px) {
   #hero {
@@ -226,18 +230,6 @@ h1, h2, h3, h4, h5, h6 {
     
   }
 }
-#hero:before {
-  content: "";
-  background: rgba(255, 255, 255, 0);
-  /*background: rgb(220,223,236);
-  background: linear-gradient(120deg,rgb(255, 255, 255) 0%, rgba(220,223,236,1) 36%, rgba(99,102,107,0) 110%);
-  */position: absolute;
-  bottom: 0px;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
 .hero_content{
   margin:80px 0;
 }
@@ -293,12 +285,11 @@ h1, h2, h3, h4, h5, h6 {
   stroke: rgb(0, 130, 190);
 }
 
-
-
 @media (max-width: 992px) {
   #hero {
     text-align: center;
     margin: 0 ;
+    /*height:calc(100%);*/
   }
   #hero h1 {
     font-size: 42px;
@@ -316,10 +307,11 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+
 @media (max-width: 425px) {
   #hero{
     margin-bottom: 60px;
-    margin-top: -10px;
+    /*height: calc(100%)*/
   }
   #hero h1 {
     font-size: 32px;
@@ -343,6 +335,7 @@ section {
   padding: 60px 30px ;
   overflow: hidden;
 }
+
 
 .section-title {
   padding-bottom: 10px;
@@ -426,7 +419,7 @@ section {
 }
 @media (max-width: 992px){
   #about{
-    margin-top: -150px;
+    
   }
 }
 
