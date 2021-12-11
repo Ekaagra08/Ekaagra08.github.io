@@ -634,7 +634,8 @@ section {
   display:flex;
   justify-content:space-between;
   align-items: center;
-  padding: 0 30px;
+  padding: 0 20px;
+  margin: 0 10px;
 }
 .certifications .certification-item h3 {
   font-size: 20px;
