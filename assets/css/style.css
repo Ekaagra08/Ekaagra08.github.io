@@ -418,28 +418,37 @@ section {
 
 .about .progress{
   background-color:#d4dbe2da;
-  border: solid 2px rgb(255, 255, 255);
+  border: solid 3px rgb(255, 255, 255);
+  border-radius: 5px;
 }
 
-
 /*--------------------------------------------------------------
-# Skills
+# Tech Stack
 --------------------------------------------------------------*/
 .tech-box {
   display: flex;
   align-items: center;
-  padding: 12px;
+  padding: 5px 10px;
+  margin: 8px 2px 0 0;
+  border-radius: 10px;
+  justify-content:center;
 }
-
+.tech-box:hover{
+  background-color:rgba(217, 225, 235, 0.336);
+  cursor: pointer;
+}
 .tech-box h6 {
   text-transform: capitalize;
   padding: 5px 0 0 20px;
   line-height: 2;
   font-weight: 600;
   font-size: larger;
-  
 }
-
+@media (max-width: 768px){
+  .tech-box{
+    justify-content: left;
+  }
+}
 /*--------------------------------------------------------------
 # education
 --------------------------------------------------------------*/
@@ -467,7 +476,8 @@ section {
 }
 .education .education-item h5 {
   font-size: 16px;
-  background: #f7f8f9;
+  background: #d5dde671;
+  border-radius: 5px;
   padding: 5px 15px;
   display: inline-block;
   font-weight: 600;
@@ -650,8 +660,13 @@ section {
 .certification-img{
   width: 55%;
   overflow:hidden;
+  display: flex;
+  justify-content: center;
 }
-
+.certification-img img{
+  width: 855px;
+  height:auto;
+}
 .certifications .swiper-pagination {
   margin-top: 30px;
   position: relative;
@@ -666,26 +681,50 @@ section {
 .certifications .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #0563bb;
 }
-.certification-img img{
-  height:auto;
-  position: relative;
-}
-@media (max-width: 1150px) {
+
+@media (max-width: 1335px) {
   .certifications .swiper-slide{
     display: block;
     padding: 0; 
-    
   }
   .certification-img{
     width: 100%;
   }
-  
   .certification-img img{
-    margin-top: 20px;
+    margin-top: 10px;
+    width:1150px;
   }
-
 }
-
+@media (max-width: 1024px) {
+  .certification-img img{
+    width: 1000px ;
+  }
+}
+@media (max-width: 768px) {
+  .certification-img img{
+    width: 750px ;
+  }
+}
+@media (max-width: 589px) {
+  .certification-img img{
+    width: 550px ;
+  }
+}
+@media (max-width: 450px) {
+  .certification-img img{
+    width: 450px ;
+  }
+}
+@media (max-width: 375px) {
+  .certification-img img{
+    width: 365px ;
+  }
+}
+@media (max-width: 320px) {
+  .certification-img img{
+    width: 340px ;
+  }
+}
 
 /*--------------------------------------------------------------
 # Contact
