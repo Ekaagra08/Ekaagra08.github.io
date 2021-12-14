@@ -267,7 +267,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero .social-links {
   margin-top: 20px;
 }
-#hero .social-links a {
+#hero .social-links a  {
   font-size: 26px;
   display: inline-block;
   color: #45505b;
@@ -304,9 +304,6 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 ;
     padding: 50px;
   }
-  #hero .social-links a {
-    font-size: 30px;
-  }
   .scroll{
     display: none;
     margin: auto;
@@ -320,13 +317,21 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #ffffff;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 650px) {
+  #hero{
+    padding: 10px;
+  }
+  #hero h1 {
+    font-size: 60px;
+  }
+}
+@media (max-width: 576px) {
   #hero{
     height: 100vh;
     padding: 5px;
   }
   #hero h1 {
-    font-size: 32px;
+    font-size: 42px;
     line-height: 36px;
   }
   #hero p {
@@ -340,18 +345,29 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 0px;
   }
   .img-box{
-    padding:0 10px;
+    padding:0 12px;
   }
 }
-@media (max-width: 320px) {
-  #hero{
-    padding: 10px;
-  }
+@media (max-width: 390px) {
   #hero h1 {
     font-size: 30px;
-    line-height: 36px;
   }
-  
+  #hero p {
+    font-size: 18px;
+  }
+  #hero .social-links a {
+
+    padding-right: 15px;
+    margin-right: 0px;
+  }
+}
+@media (max-width: 300px) {
+  #hero h1 {
+    font-size: 28px;
+  }
+  #hero .social-links {
+    font-size: 16px;
+  }
 }
 /*--------------------------------------------------------------
 # Sections General
@@ -360,7 +376,6 @@ section {
   padding: 60px 30px ;
   overflow: hidden;
 }
-
 .section-title {
   padding-bottom: 10px;
   text-align: left;
@@ -409,6 +424,11 @@ section {
   }
   #projects .proj-box{
     padding:20px;
+  }
+}
+@media (max-width: 320px){
+  #about,#tech_stack,#projects,#education,#Certification,#contact{
+    padding:50px 16px;
   }
 }
 
@@ -668,6 +688,23 @@ section {
   width: 855px;
   height:auto;
 }
+/*
+.overlay-mask{
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: indianred;
+  color: white;
+  overflow: hidden;
+  width: 55%;
+  height: 0;
+  transition: .5s ease
+}
+.certification-img:hover .overlay-mask{
+  height: 100%;
+  bottom: 0;
+}*/
 .certifications .swiper-pagination {
   margin-top: 30px;
   position: relative;
@@ -730,6 +767,10 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+/*.contact {
+  background: url("/assets/img/contact_bg.svg") top right no-repeat;
+  background-size: cover;
+}*/
 .contact .social-links a i{
   color: #0563bb;
   font-size: 36px;
@@ -773,10 +814,11 @@ section {
   color: #fff;
   
 }
-
 @media (max-width: 425px){
   .contact .social-links a i{
-    font-size: 30px;
-    margin-right:20px; 
+    font-size: 26px;
+    margin-right:16px; 
   }
 }
+
+/*###############################*/

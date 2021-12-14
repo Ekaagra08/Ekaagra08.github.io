@@ -152,7 +152,7 @@
    */
   new Swiper('.certifications-slider', {
     speed: 600,
-    autoHeight: true,
+    /*autoHeight: true,*/
     loop: true,
     autoplay: {
       delay: 4000,
