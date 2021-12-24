@@ -595,6 +595,24 @@ section {
 .projects .projbox-blue:hover .icon path {
   fill: #47aeff;
 }
+.projects .projbox-green i {
+  color: #5bff56;
+}
+.projects .projbox-green:hover .icon i {
+  color: #fff;
+}
+.projects .projbox-green:hover .icon path {
+  fill: #5bff56;
+}
+.projects .projbox-bloodred i {
+  color: #c90000;
+}
+.projects .projbox-bloodred:hover .icon i {
+  color: #fff;
+}
+.projects .projbox-bloodred:hover .icon path {
+  fill: #c90000;
+}
 .projects .projbox-orange i {
   color: #ffa76e;
 }
