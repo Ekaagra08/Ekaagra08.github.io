@@ -55,6 +55,7 @@
   <!-- ======= Mobile nav toggle button ======= -->
   <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
   <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex flex-column justify-content-center">
     <nav id="navbar" class="navbar nav-menu flex-column">
@@ -213,6 +214,48 @@
         <div class="row">
 
           <div class="col-xl-6 mt-3" data-aos="zoom-in" data-aos-delay="20">
+            <div class="proj-box projbox-yellow">
+              <div class="d-md-flex align-items-center">
+                <div class="icon">
+                  <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke="none" stroke-width="0" fill="#f5f5" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path>
+                  </svg>
+                  <i class="bi bi-crop"></i>
+                </div>
+                <h4 class="mx-md-3"><a href="">Text Based Object Cropping</a></h4>
+                <a href="https://github.com/Ekaagra08/Smart-Image-Crop" class="btn btn-outline-primary my-2">Code</a>
+              </div>
+              <p> Taking an object's description as text, then locates the matching object in the image and crops the portion</p>
+              <div class="collapse" id="collapseProject6">
+                <!--<p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>  
+                -->
+              </div>
+              <!--<i class='expand bx bx-chevron-down bx-md bx-fade-down-hover mt-3' type="button" data-bs-toggle="collapse" data-bs-target="#collapseProject6" aria-expanded="false" aria-controls="collapseProject6"></i>-->
+            </div>
+          </div>
+
+          <div class="col-xl-6 mt-3" data-aos="zoom-in" data-aos-delay="20">
+            <div class="proj-box projbox-green">
+              <div class="d-md-flex align-items-center">
+                <div class="icon">
+                  <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke="none" stroke-width="0" fill="#f5f5" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path>
+                  </svg>
+                  <i class="bi bi-newspaper"></i>
+                </div>
+                <h4 class="mx-md-3"><a href="">News Recommender</a></h4>
+                <a href="https://github.com/Ekaagra08/News-Recommendation-system" class="btn btn-outline-primary my-2">Code</a>
+              </div>
+              <p>Content based news recommender system was made using LDA for Topic modeling</p>
+              <div class="collapse" id="collapseProject6">
+                <!--<p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>  
+                -->
+              </div>
+              <!--<i class='expand bx bx-chevron-down bx-md bx-fade-down-hover mt-3' type="button" data-bs-toggle="collapse" data-bs-target="#collapseProject6" aria-expanded="false" aria-controls="collapseProject6"></i>-->
+            </div>
+          </div>
+
+          <div class="col-xl-6 mt-3" data-aos="zoom-in" data-aos-delay="20">
             <div class="proj-box projbox-teal">
               <div class="d-md-flex align-items-center">
                 <div class="icon">
@@ -221,10 +264,31 @@
                   </svg>
                   <i class="bi bi-film"></i>
                 </div>
-                <h4 class="mx-md-3"><a href="">Video Classification</a></h4>
+                <h4 class="mx-md-3"><a href="">Video Action Recognition</a></h4>
                 <a href="https://github.com/Ekaagra08/CNN-LSTM_video_classification" class="btn btn-outline-primary my-2">Code</a>
               </div>
-              <p>Extracted frames from a subset of large UFC101 videos dataset and then performed action classification (temporal + spatial data) using CNN + LSTM model . </p>
+              <p>Recognised the different actions being performed in a video in real time. Used a large dataset of  UCF140 videos and made Machine Learning pipelines to extract multiple frames from each video at regular intervals using a custom function and perform classification using CNN+LSTM model to capture both spatial and temporal information from the frames.</p>
+              <div class="collapse" id="collapseProject6">
+                <!--<p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>  
+                -->
+              </div>
+              <!--<i class='expand bx bx-chevron-down bx-md bx-fade-down-hover mt-3' type="button" data-bs-toggle="collapse" data-bs-target="#collapseProject6" aria-expanded="false" aria-controls="collapseProject6"></i>-->
+            </div>
+          </div>
+
+          <div class="col-xl-6 mt-3" data-aos="zoom-in" data-aos-delay="20">
+            <div class="proj-box projbox-pink">
+              <div class="d-md-flex align-items-center">
+                <div class="icon">
+                  <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke="none" stroke-width="0" fill="#f5f5" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path>
+                  </svg>
+                  <i class="bi bi-file-text"></i>
+                </div>
+                <h4 class="mx-md-3"><a href="">Resume NER</a></h4>
+                <a href="https://github.com/Ekaagra08/Resume-Parsing-NER-Rule_based-" class="btn btn-outline-primary my-2">Code</a>
+              </div>
+              <p>  Large dataset consisting of hand labelled custom entities extracted using API was taken from kaggle; on this data after doing some annotations a custom SpaCy NER model was trained; later the results were combined with the rule-based model to give best predictions. Input was taken in the form of a PDF which was later parsed to pass into the model and output results the form of a table.</p>
               <div class="collapse" id="collapseProject6">
                 <!--<p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>  
                 -->
@@ -245,12 +309,35 @@
                 <h4 class="mx-md-3"><a href=""></a>Sentiment Analysis</h4>
                 <a href="https://github.com/Ekaagra08/Twitter-Sentiment-Analysis" class="btn btn-outline-primary my-2">Code</a>
               </div>
-              <p>Using large dataset of sentiment140 predicted polarity of tweets by comparing different models like LSTM, Naive Bayes and Logistic Regression. Scraped tweets using Twitter API and displayed analytics on webapp using Flask.
+              <p>On a large dataset of sentiment104, predicted the polarity of tweets by comparing LSTM, Logistic Regression and Naive Bayes models to find the best fit. For text preprocessing techniques like lemmatization, stopwords removal, tokenization and some custom regex operations were performed. Scraped tweets with Twitter API & displayed their analytics on  a web app using Flask.
+
               </p>
               <div class="collapse" id="collapseProject4">
                 <!--<p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>  
                 -->
                 </div>
+              <!--<i class='expand bx bx-chevron-down bx-md bx-fade-down-hover mt-3' type="button" data-bs-toggle="collapse" data-bs-target="#collapseProject4" aria-expanded="false" aria-controls="collapseProject4"></i>-->
+            </div>
+          </div>
+     
+          <div class="col-xl-6 mt-3" data-aos="zoom-in" data-aos-delay="20">
+            <div class="proj-box projbox-blue ">
+              <div class="d-md-flex align-items-center">
+                <div class="icon">
+                  <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
+                  </svg>
+                  <i class="bi bi-bar-chart-line-fill"></i>
+                </div>
+                <h4 class="mx-md-3"><a href=""></a>Retail EDA</h4>
+                <a href="https://github.com/Ekaagra08/Retail-EDA" class="btn btn-outline-primary my-2">Code</a>
+              </div>
+              <p>Did exploratory data analysis on retail bill data of 10 lakh customers over the span of 3 years used pandas, numpy and matplotlib to examine the data and extract insights and made different evaluation metrics and functions to solve business problems like customer segregation, loyalty of customers and seasonality in data to improve customer retention and  business decisions.
+              </p>
+              <div class="collapse" id="collapseProject4">
+                <!--<p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>  
+                -->
+              </div>
               <!--<i class='expand bx bx-chevron-down bx-md bx-fade-down-hover mt-3' type="button" data-bs-toggle="collapse" data-bs-target="#collapseProject4" aria-expanded="false" aria-controls="collapseProject4"></i>-->
             </div>
           </div>
@@ -275,29 +362,7 @@
               <!--<i class='expand bx bx-chevron-down bx-md bx-fade-down-hover mt-3' type="button" data-bs-toggle="collapse" data-bs-target="#collapseProject5" aria-expanded="false" aria-controls="collapseProject5"></i>-->
             </div>
           </div>
-
-          <div class="col-xl-6 mt-3" data-aos="zoom-in" data-aos-delay="20">
-            <div class="proj-box projbox-blue ">
-              <div class="d-md-flex align-items-center">
-                <div class="icon">
-                  <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
-                  </svg>
-                  <i class="bi bi-bar-chart-line-fill"></i>
-                </div>
-                <h4 class="mx-md-3"><a href=""></a>Retail EDA</h4>
-                <a href="https://github.com/Ekaagra08/Retail-EDA" class="btn btn-outline-primary my-2">Code</a>
-              </div>
-              <p>Did exploratory data analysis on retail bill data to get insights and improve business decisions.
-              </p>
-              <div class="collapse" id="collapseProject4">
-                <!--<p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>  
-                -->
-                </div>
-              <!--<i class='expand bx bx-chevron-down bx-md bx-fade-down-hover mt-3' type="button" data-bs-toggle="collapse" data-bs-target="#collapseProject4" aria-expanded="false" aria-controls="collapseProject4"></i>-->
-            </div>
-          </div>
-
+          
           <div class="col-xl-6 mt-3" data-aos="zoom-in" data-aos-delay="20">
             <div class="proj-box projbox-orange ">
               <div class="d-md-flex align-items-center">
@@ -331,7 +396,7 @@
                 <h4 class="mx-md-3"><a href="">Spam SMS Classification</a></h4>
                 <a href="https://github.com/Ekaagra08/SMS-classifier" class="btn btn-outline-primary my-2">Code</a>
               </div>
-              <p>SMS Classification performed using pandas, scikit-learn, NLTK and deployed using Flask. </p>
+              <p>Classified if SMS was spam or not using count vectorization for making vectors, Naive Bayes for classification and libraries like Pandas, Scikit-learn and NLTK. A web app made using Flask.</p>
               <div class="collapse" id="collapseProject2">
                 <!--<p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>  
                 -->
@@ -352,7 +417,7 @@
                 <h4 class="mx-md-3"><a href="">Real-estate price prediction </a></h4>
                 <a href="https://github.com/Ekaagra08/Real-estate-price-prediction" class="btn btn-outline-primary my-2">Code</a>
               </div>
-              <p>Predicting Delhi house prices (multiple regression algos.) based on different features and plotting the location of houses in a similar price range using Map API, deployed using Flask.
+              <p> Predicted Delhi houses prices by comparing multiple regression algorithms based on different features and plotted houses of similar price range using Map API, deployed using Flask.
               </p>
               <div class="collapse" id="collapseProject1">
                 <!--<p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>  
